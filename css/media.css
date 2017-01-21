@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1280px) {
+	.footerleft p {
+		float: left;
+		font-size: 1em;
+		line-height: 1.3em;
+	}
+	.footerleft p {
+		padding-bottom: 0px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.thedate {
+		width: 18vw;
+		left: 41vw;
+	}
+	.thedate img{
+		width: 100%;
+	}
+
+	#subtitle {
+		width: 70%;
+	    margin-left: 15%;
+	    margin-right: 15%;
+	}
+	#subtitle p {
+		font-size: 3vh;
+		text-align: center;
+	}
+	footer {
+		margin-top: 3%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.footerleft {
+		width: 96%;
+	}
+	.footerleft p {
+		float: left;
+		font-size: 2vh;
+		line-height: 1.5em;
+	}
+	.dropdown-content {
+	    margin-top: 0vh;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+	.thedate {
+		width: 20vw;
+		left: 40vw;
+	}
+
+	#subtitle {
+		width: 58%;
+	    margin-left: 21%;
+	    margin-right: 21%;
+	}
+	#subtitle p {
+		font-size: 3vh;
+		text-align: center;
+	}
+
+	.menu {
+		position: relative;
+		width: 100%;
+		float: left;
+		margin: 0 auto;
+		margin-bottom: 1.5em;
+	}
+
+	section {
+		width: 100%;
+		padding-bottom: 0;
+		font-size: 2vh;
+		line-height: 1.5em;
+	}
+
+	h2 {
+		font-size: 2vh;
+		line-height: 1.5em;
+	}
+
+	#engHeaderTop {
+		margin-top: 2em;
+	}
+
+	#arabicHeaderTop {
+		margin-top: 0;
+	}
+
+	p {
+		font-size: 2vh;
+		margin-bottom: 0;
+	}
+
+	.english {
+		line-height: 1.5em;
+	}
+
+	.arabic {
+		line-height: 1.6em;
+	}
+
+    footer {
+		margin-top: 3%;
+		margin-bottom: 2%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.footerleft {
+		width: 96%;
+	}
+	.footerleft p {
+		float: left;
+		font-size: 2vh;
+		line-height: 1.5em;
+		padding-bottom: 10px;
+	}
+	.dropdown-content {
+	    margin-top: 0vh;
+	}
+}

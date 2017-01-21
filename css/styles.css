@@ -1,0 +1,470 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'Kaff';
+    src: url("../fonts/29LT Kaff-Regular.OTF");
+}
+
+@font-face {
+    font-family: 'Zeyn';
+    src: url("../fonts/29LT Zeyn-Regular.OTF");
+}
+
+body {
+	/* padding: 10% 3% 10% 3%; */
+	padding-top: 4%;
+	padding-left: 1%;
+	padding-right: 1%;
+	color: black;
+	overflow-x: hidden;
+}
+
+
+
+
+/*********************************************************
+
+	date
+
+*********************************************************/
+
+@keyframes running{
+	from {top:-90vh;}
+	to {top:105vh;}
+}
+.thedate img{
+	position: relative;
+	width: 100%;
+}
+.thedate {
+	position: fixed;
+	z-index: 10000;
+	width: 10vw;
+	/* background-color: yellow; */
+	left: 45vw;
+	animation-name: running;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+
+
+
+
+/*********************************************************
+
+	Title
+
+*********************************************************/
+span {
+	display:block;
+	font-family: 'Zeyn';
+	font-weight: normal;
+}
+
+/* #crayon {
+	position: absolute;
+	z-index: -10000;
+	width: 40vw;
+	margin-top: 1%;
+	margin-left: 5%;
+}
+#crayon img {
+	width: 300%;
+	transition: opacity 0.5s ease, filter 0.5s ease;
+    -webkit-transition: opacity 0.5s ease, filter 0.5s ease;
+} */
+
+#titles {
+	width: 100%;
+	margin-bottom: 10vh;
+}
+.englishTitle {
+	width: 100%;
+	font-size: 21.5vw;
+	line-height: .6em;
+	margin-left:0;
+	opacity: 1;
+    -webkit-transition: margin-left 1s ease, opacity 1s ease;
+    -moz-transition: margin-left 1s ease, opacity 1s ease;
+    -o-transition: margin-left 1s ease, opacity 1s ease;
+    transition: margin-left 1s ease, opacity 1s ease;
+}
+.ePreloading{
+	margin-left: -10vw;
+	opacity: 0;
+}
+
+.arabicTitle {
+	width: 100%;
+	direction: rtl;
+	font-size: 19.1vw;
+	text-align: right;
+	line-height: 0.9em;
+	margin-left: 0;
+	opacity: 1;
+	-webkit-transition: margin-left 1s ease, opacity 1s ease;
+    -moz-transition: margin-left 1s ease, opacity 1s ease;
+    -o-transition: margin-left 1s ease, opacity 1s ease;
+    transition: margin-left 1s ease, opacity 1s ease;
+}
+.aPreloading {
+	margin-left: 10vw;
+	opacity: 0;
+}
+
+#subtitle-container{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 5vh;
+}
+#subtitle {
+	width: 38%;
+    margin-left: 31%;
+    margin-right: 31%;
+}
+
+@keyframes blink{
+	0% {color:black;opacity:1;}
+	48% {opacity:1;}
+	49% {opacity:0.5;}
+	50% {opacity:0;}
+	98% {opacity:0;}
+	99% {opacity:0.5;}
+	100% {opacity:1;}
+}
+@keyframes cchange{
+	0% {color:purple;}
+	10% {color:#AF593E;}
+	25% {color:green;}
+	50% {color:#FD0E35;}
+	60% {color:blue;}
+	75% {color:pink;}
+	100% {color:purple;}
+}
+/* @keyframes cchange{
+	0% {color:black;opacity:1;}
+	90% {opacity:1;}
+	93% {opacity:0.5;}
+	95% {opacity:0;}
+	100% {opacity:0;}
+} */
+#subtitle-container #subtitle p{
+	position: relative;
+	margin: 0 0 0 0;
+	font: 'Kaff';
+	width: 100%;
+	text-align: center;
+	animation: cchange;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+
+
+
+/*********************************************************
+
+	Menu
+
+*********************************************************/
+
+.menu {
+	position: relative;
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	margin-bottom: 3em;
+}
+
+.headers {
+	position: relative;
+	width: 100%;
+	float: left;
+	font-family: 'Zeyn';
+	font-weight: normal;
+	margin: 0 0 0 0;	
+}
+
+.englishHeader {
+	font-size: 21.5vw;
+	padding-left: .5%;
+	margin-bottom: 1%;
+	text-shadow: 0 0 0 rgba(0,0,0,1);
+    -webkit-transition: margin-left 1s ease, opacity 1s ease, text-shadow 0.5s ease;
+    -moz-transition: margin-left 1s ease, opacity 1s ease, text-shadow 0.5s ease;
+    -o-transition: margin-left 1s ease, opacity 1s ease, text-shadow 0.5s ease;
+    transition: margin-left 1s ease, opacity 1s ease, text-shadow 0.5s ease;
+	/* line-height: 0.9em; */
+}
+#exhibitors .englishHeader {
+	margin-bottom: -1.5%;
+}
+#gallery .englishHeader {
+	margin-bottom: -1.5%;
+}
+
+.englishHeader-container{
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.arabicHeader {
+	width: 100%;
+	direction: rtl;
+	font-size: 19.2vw;
+	text-align: right;
+	text-shadow: 0 0 0 rgba(0,0,0,1);
+    -webkit-transition: margin-left 1s ease, opacity 1s ease, text-shadow 0.5s ease;
+    -moz-transition: margin-left 1s ease, opacity 1s ease, text-shadow 0.5s ease;
+    -o-transition: margin-left 1s ease, opacity 1s ease, text-shadow 0.5s ease;
+    transition: margin-left 1s ease, opacity 1s ease, text-shadow 0.5s ease;
+}
+.arabicHeader-container{
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+/* ---------------- Menu Hover Effect ---------------- */
+@keyframes swing{
+	0% {padding-left:.5%;}
+	50% {padding-left:2%;}
+	100% {padding-left:.5%;}
+}
+.outOfFocus {
+	color: transparent;
+	text-shadow: 0 0 50px rgba(0,0,0,0.5);
+	animation-name: swing;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+/* ---------------- Coming Soon ---------------- */
+p.english-comingsoon{
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	font-size: 2.5vw;
+	text-transform: uppercase;
+	/* color: DodgerBlue; */
+
+	animation: cchange;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+
+    -webkit-transition: margin-left 1s ease, opacity 1s ease 2s;
+    -moz-transition: margin-left 1s ease, opacity 1s ease 2s;
+    -o-transition: margin-left 1s ease, opacity 1s ease 2s;
+    transition: margin-left 1s ease, opacity 1s ease 2s;
+/* 	text-transform: uppercase;
+	-ms-transform: rotate(-20deg); 
+    -webkit-transform: rotate(-20deg); 
+    transform: rotate(-20deg); */
+}
+.englishHeader-container{
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+p.arabic-comingsoon{
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	font-size: 2.5vw;
+	/* color: DodgerBlue; */
+	text-transform: uppercase;
+
+	animation: cchange;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+
+	-webkit-transition: margin-left 1s ease, opacity 1s ease 2s;
+    -moz-transition: margin-left 1s ease, opacity 1s ease 2s;
+    -o-transition: margin-left 1s ease, opacity 1s ease 2s;
+    transition: margin-left 1s ease, opacity 1s ease 2s;
+/* 	-ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg); 
+    transform: rotate(20deg); */
+}
+.arabicHeader-container{
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+/* ---------------- 'Hide' for Scrolling Effect ---------------- */
+/* .hide{
+	opacity: 0;
+	margin-top: 1em;
+} */
+
+
+/* ---------------- Content(section) ---------------- */
+
+section {
+	width: 50%;
+	font-family: 'Kaff';
+	font-size: 1.9vw;
+	line-height: 2.6vw;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.9vw;
+	line-height: 2.6vw;
+	/* letter-spacing: 6px; */
+}
+
+#engHeaderTop {
+	margin-top: 1em;
+}
+
+#arabicHeaderTop {
+	margin-top: 1em;
+}
+
+p {
+	margin-bottom: 1.2rem;
+	font-family: 'Kaff';
+	font-weight: normal;
+	font-size: 1.9vw;
+}
+
+.english {
+	margin-top: 5px;
+	float: left;
+	padding-left: .5%;
+	line-height: 2.6vw;
+}
+
+.englishRight {
+	margin-left: -5%;
+	float: right;
+	text-align: right;
+}
+
+.arabic {
+	margin-left: -5%;
+	float: right;
+	direction: rtl;
+	line-height: 2.8vw;
+}
+
+ul {
+	list-style: none;
+}
+
+
+/* ---------------- drop down ---------------- */
+
+#wrap {
+	height: 18vw;
+}
+
+.dropbtn {
+	font-family: 'Zeyn';
+	font-size: 21.5vw;
+	line-height: .8em;
+    cursor: pointer;
+}
+
+.dropbtn.arabicHeader {
+	direction: rtl;
+	font-size: 19.2vw;
+	line-height: .8em;
+	text-align: right;
+	height: auto;
+}
+
+.dropdown {
+    display: inline-block;
+    width:100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5vh;
+}
+
+.dropdown-content section {
+    display: block;
+}
+
+.show {display:block;}
+
+
+
+
+
+
+
+/*********************************************************
+
+	footer
+
+*********************************************************/
+
+footer {
+	position: relative;
+	float: left;
+	clear: left;
+	width: 100%;
+	height: 50px;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+.footerleft {
+	width: 96%;
+	margin-left: 1%;
+	height: 100%;
+	float: left;
+	padding-top:1%;
+}
+.footerleft p {
+	float: left;
+	font-size: 1.2vw;
+	line-height: 1.6vw;
+	padding-bottom: 10px;
+}
+.footerleft a:link,
+.footerleft a:visited {
+	text-decoration: underline;
+	color: black;
+}
+
+/* .footerright {
+	display: inline-block;
+	width: 49%;
+	margin-right: 1%;
+	height: 100%;
+	float: right;
+	padding-top: 1%;
+}
+.footerright img {
+	position: relative;
+	display: inline-block;
+	float: right;
+	clear: none;
+	margin-top: -2%;
+	height: 100%;
+}
+ */
